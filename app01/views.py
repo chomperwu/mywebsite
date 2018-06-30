@@ -15,4 +15,4 @@ def db_handle(request):
     user_list_obj = models.userinfo.objects.all()
     #for line in user_list_obj:
     #    print line.name
-    return render()
+    return render(request,'t1.html',{'li':user_list_obj})
