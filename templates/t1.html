@@ -5,8 +5,14 @@
     <title>Title</title>
 </head>
 <body>
+    <form action="/db_handle/" method="post">
+        <p><input type="text" name="name"></p>
+        <p><input type="text" name="age"></p>
+        <p><input type="submit" value="提交"></p>
+    </form>
     {% for item in li %}
         <h1>{{ item.name }}</h1>
+        <h1>{{ item.age }}</h1>
     {% endfor %}
 </body>
 </html>
