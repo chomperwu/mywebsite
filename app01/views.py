@@ -21,6 +21,6 @@ def db_handle(request):
                                       )
     user_list_obj = models.userinfo.objects.all()
     #print request.POST.get('userage')
-    print request.POST
+    #print request.POST
     #print type(request.POST)
     return render(request,'t1.html',{'li':user_list_obj})
